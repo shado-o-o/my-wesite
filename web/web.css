@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 15px;
+    font-family:  'Poppins', sans-serif;
+}
+body{
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color:#002B5B ;
+    z-index: 999;
+}
+header div:first-child{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+header div:first-child a{   
+    color:#48dbfb ;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -5px 5px 5px  #06090c;
+    transition: 0.7s ease;
+}
+header div:first-child a:hover{
+    transform: scale(1.2,1.2);
+    color: aqua;
+    text-shadow: 0px 0px 30px aqua;
+}
+.a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+.a a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 30px;
+    color:#48dbfb ;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.7s ease;
+    text-shadow: -5px 5px 5px  #06090c;
+}
+.a a:hover{
+    transform: scale(1.2,1.2);
+    color: aqua;
+    text-shadow: 0px 0px 30px aqua;
+}
+.images {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: 0.7s ease;
+}
+.images:hover{
+    transform: scale(1.2,1.2);
+}
+nav{
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    height: 625px;
+    background: url("../image/images\ \(2\)_1659292895513.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.world{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.world *{
+    padding-bottom: 10px;
+}
+.shady{
+    position:relative;
+    left: 100px;
+    top:-10px;
+}
+.content1{
+    position: relative;
+}
+.content1 h2{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 6em;
+}
+.content1 h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke:2px #03a9f4;
+}
+.content1 h2:nth-child(2){
+    color: #03a9f4;
+    animation: anime 4s ease-in-out infinite;
+}
+@keyframes anime{
+    0%,100%{
+        clip-path: polygon(0 46%, 14% 47%, 28% 53%, 40% 62%, 55% 63%, 71% 60%, 86% 57%, 100% 55%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 57%, 13% 64%, 29% 67%, 45% 65%, 58% 58%, 70% 51%, 84% 46%, 100% 46%, 100% 100%, 0 100%);
+    }
+}
+.world h1{
+    font-size: 2.3em;
+    font-weight: 600;
+    color: #0abde3;
+}
+.world h5{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #2e86df;
+}
+.phone h6{
+    color:#0abde3;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.phone span{
+    color: #48dbfb;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.social-icons{
+    position: relative;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #0abde3;
+}
+.social-icons a{
+    padding-right: 20px;
+    transition: 0.7s ease;
+    color:#2e86df;
+    text-shadow: -5px 5px 5px  #06090c;
+}
+.social-icons a:hover{
+    transform: scale(1.1);
+    color: aqua;
+    text-shadow: 0px 0px 15px  aqua;
+}
+.about{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient( 45deg, #002B5B, #2e86df);
+}
+.pragraph{
+    position: relative;
+    width: 40%;
+    height: 500px;
+    left: 50%;
+    padding-top:100px;
+}
+.pragraph p{
+    font-size: 1.2em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+}
+.pragraph span{
+    color: #0abde3;
+    font-size: 1.5;
+    font-weight: 500;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.pragraph .social-icons{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.about img{
+    position: absolute;
+    width: 45%;
+    height: 570px;
+    padding-top: 10px;
+    border-radius: 45px;
+}
+.about .pragraph img{
+    position: relative;
+    top: 5px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 45px;
+    padding-bottom: 10px;
+}
+.servies{
+    position: relative;
+    width: 100%;
+    height: 625px; 
+    background-image: linear-gradient( 45deg, #002B5B,#2e86df );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.servies h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    top: 0;
+    padding-top: 40px;
+    color: #48dbfb;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -5px 5px 5px  #06090c;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    position: relative;
+    width: 170px;
+    height: 270px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-image: linear-gradient(rgb(54, 250, 234), rgb(248, 245, 245));
+    text-align: center;
+    flex-direction: row;
+    box-shadow: 0 0 20px aqua,
+    0 0 0  inset aqua;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 150px  aqua
+    0 0 150px  inset aqua;
+}
+.card img{
+    width: 169px;
+    height: 140px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.card img:valid:focus{
+    transform: scale(2,2);
+}
+.card h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: blue;
+    padding-bottom: 10px;
+}
+.card p{
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-weight: 500;  
+}
+.icons{
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icons h5{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: blue;
+}
+.icons a{
+    font-size: 1.2em;
+    font-weight: 900;
+    padding-left: 65px;   
+}
+.anime{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    background-image: linear-gradient( 45deg, #002B5B,#2e86df );
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.anime h2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    top: 0;
+    padding-top: 40px;
+    color: #48dbfb;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: -5px 5px 5px  #06090c;
+}
+.video{
+    padding-top: 100px;
+    flex-wrap: wrap;
+}
+.video1{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+}
+.video video{
+    position: relative;
+    width: 600px;
+    height:350px;
+    margin-left: 22%;
+    transition: 0.7s ease;
+    padding-top: 10px;
+    border-radius: 35px;
+}
+.video video:hover{
+    transform: scale(1.1);
+}
+.sitting{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, rgb(36, 32, 32) ,rgb(0, 0, 0));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sitting .st1{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.sitting .st2{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+.sitting h5{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 300;
+    padding-top: 10px;
+}
+@media (max-width:720px){
+    body{
+        font-size: 12px;
+        width: 100%;
+        height: 100%;
+    }
+    header div:first-child{
+        display: flex;
+        align-items: center;
+        padding-left: 1px;
+    }
+    header div:first-child a{   
+        color:#48dbfb ;
+        font-size: 1em;
+        font-weight: 600;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: -5px 5px 5px  #06090c;
+        transition: 0.7s ease;
+    }
+    header div:first-child a:hover{
+        transform: scale(1.2,1.2);
+        color: aqua;
+        text-shadow: 0px 0px 30px aqua;
+    }
+    .a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-right: 0px;
+    }
+    .a a{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 20px;
+        color:#48dbfb ;
+        font-size: 0.7em;
+        font-weight: 500;
+        text-decoration: none;
+        transition: 0.7s ease;
+        text-shadow: -5px 5px 5px  #06090c
+    }
+    .images {
+        position: relative;
+        width: 50px;
+        height: 50px;
+    }
+    .about{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient( 45deg, #002B5B, #2e86df);
+    }
+    .pragraph{
+        position: relative;
+        width: 40%;
+        height: 400px;
+        left: 50%;
+        padding-top:30px;
+    }
+    .pragraph p{
+        font-size: 1em;
+        font-weight: 400;
+        color: white;
+        text-align: center;
+    }
+    .pragraph span{
+        color: #0abde3;
+        font-size: 1.2em;
+        font-weight: 500;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .pragraph .social-icons{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    .about img{
+        position: absolute;
+        width: 50%;
+        height: 65%;
+        top: 30px;
+        padding-top: 10px;
+        border-radius: 45px;
+    }
+    .about .pragraph img{
+        position: relative;
+        top: 0px;
+        left: 25%;
+        width: 60%;
+        height: 25%;
+        border-radius: 15px;
+        padding-bottom: 10px;
+    }
+    .servies{
+        position: relative;
+        width: 100%;
+        height: 100%; 
+        background-image: linear-gradient( 45deg, #002B5B,#2e86df );
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .servies h2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        top: 0;
+        padding-top: 40px;
+        color: #48dbfb;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: -5px 5px 5px  #06090c;
+    }
+    .cards{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        padding-bottom: 5px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .card{
+        position: relative;
+        width: 170px;
+        height: 270px;
+        border-radius: 10px;
+        margin-top: 10px;
+        border: 1px solid black;
+        background-image: linear-gradient(rgb(54, 250, 234), rgb(248, 245, 245));
+        text-align: center;
+        flex-direction: row;
+        box-shadow: 0 0 20px aqua,
+        0 0 0  inset aqua;
+        transition: 0.7s ease;
+    }
+    .anime{
+        position: relative;
+        width: 100%;
+        height: 100%; 
+        background-image: linear-gradient( 45deg, #002B5B,#2e86df );
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .anime h2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        font-size: 2em;
+        top: 0;
+        padding-top: 40px;
+        color: #48dbfb;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-shadow: -5px 5px 5px  #06090c;;
+    }
+    .video1{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-top: 30px;
+        
+    }
+    .video{
+        padding-top: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .video1 video{
+        position: relative;
+        margin-left: 15%;
+        width: 70%;
+        height:20%;
+        background: rgb(211, 111, 111);
+        transition: 0.7s ease; 
+        border-radius: 20px;
+        border: 2px solid rgb(206, 105, 105);
+     
+    }
+    .anime div:first-child{
+        width: 100%;
+    }   
+    .sitting{
+        position: absolute;
+        width: 100%;
+        height: 22%;
+        background-image: linear-gradient(45deg, rgb(36, 32, 32) ,rgb(0, 0, 0));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .sitting .st1{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        padding-left: 5px;
+        padding-top: 2px;
+    }
+    .sitting .st2{
+        position: relative;
+        width: 50%;
+        height: 100%;
+        padding: 2px;
+    }
+    .sitting h5{
+        color: white;
+        font-size: 0.9em;
+        font-weight: 200;
+        padding-top: 10px;
+    }
+}
